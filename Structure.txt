@@ -1,0 +1,63 @@
+rbac-auth-backend
+│
+├── src
+│
+│   ├── main
+│   │   ├── java
+│   │   │
+│   │   │   └── com.example.rbac
+│   │   │
+│   │   │       ├── config
+│   │   │       │      ├── SwaggerConfig.java
+│   │   │       │      └── AppConfig.java
+│   │   │       │
+│   │   │       ├── controller
+│   │   │       │      ├── AuthController.java
+│   │   │       │      ├── UserController.java
+│   │   │       │      └── AdminController.java
+│   │   │       │
+│   │   │       ├── service
+│   │   │       │      ├── AuthService.java
+│   │   │       │      └── UserService.java
+│   │   │       │
+│   │   │       ├── service
+│   │   │       │   └── impl
+│   │   │       │         ├── AuthServiceImpl.java
+│   │   │       │         └── UserServiceImpl.java
+│   │   │       │
+│   │   │       ├── repository
+│   │   │       │      ├── UserRepository.java
+│   │   │       │      └── RoleRepository.java
+│   │   │       │
+│   │   │       ├── entity
+│   │   │       │      ├── User.java
+│   │   │       │      └── Role.java
+│   │   │       │
+│   │   │       ├── dto
+│   │   │       │      ├── request
+│   │   │       │      │      ├── RegisterRequest.java
+│   │   │       │      │      └── LoginRequest.java
+│   │   │       │      │
+│   │   │       │      └── response
+│   │   │       │             └── AuthResponse.java
+│   │   │       │
+│   │   │       ├── mapper
+│   │   │       │      └── UserMapper.java
+│   │   │       │
+│   │   │       ├── security
+│   │   │       │      ├── JwtService.java
+│   │   │       │      ├── JwtAuthenticationFilter.java
+│   │   │       │      ├── SecurityConfig.java
+│   │   │       │      └── CustomUserDetailsService.java
+│   │   │       │
+│   │   │       ├── exception
+│   │   │       │      ├── GlobalExceptionHandler.java
+│   │   │       │      └── ResourceNotFoundException.java
+│   │   │       │
+│   │   │       └── RbacAuthApplication.java
+│   │   │
+│   │   └── resources
+│   │        ├── application.properties
+│   │        └── data.sql
+│
+└── pom.xml

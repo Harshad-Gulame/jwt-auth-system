@@ -1,0 +1,9 @@
+auth_rbac_system
+        │
+        └── users
+              ├── id
+              ├── name
+              ├── email
+              ├── password
+              ├── role
+              └── created_at
